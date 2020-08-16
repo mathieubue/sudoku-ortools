@@ -79,15 +79,15 @@ def CreationGrille(nbvaleurs):
         cases.append(C)
         C=[]
         
-    #A partir de la matrice cases vide(avec des None) on attribut des valeurs  aléatoire à une case aléatoire
+    #A partir de la matrice cases vide(avec des None) on attribue une valeur  aléatoire à une case aléatoire
     CreationValeur(model,nbvaleurs,cases)
     
-    #On crée differentes matrices a partir de cases
+    #On crée differentes matrices a partir des cases
     lignes = CreationLignes(cases)
     colonnes = CreationColonnes(lignes)
     elementsCases = ElementsCases(cases)
     
-    #on extrait les valeurs non nuls dans chaque matrices / lignes et colonnes 
+    #on extrait les valeurs non nulles dans chaque matrice / ligne et colonne 
     lignesValeurs = ListeValeursNonNulles(lignes)
     colonnesValeurs = ListeValeursNonNulles(colonnes)
     elementsCasesValeurs = ListeValeursNonNulles(elementsCases)
